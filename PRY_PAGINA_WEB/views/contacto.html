@@ -1,0 +1,65 @@
+<section class="page-section pt-5" id="contact">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">CONTACTAME</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                
+                <div class="alert alert-warning mb-4" role="alert">
+                    <i class="bi bi-asterisk me-2"></i> Rellena todos los campos obligatorios (*).
+                </div>
+                
+                <form id="contactForm" class="p-4 border rounded shadow-sm">
+                    
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="nombre" type="text" placeholder="Tu nombre" **required** **maxlength="100"** />
+                        <label for="nombre">Nombre: *</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" **required** />
+                        <label for="email">Correo: *</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="password" type="password" placeholder="Contraseña segura" **minlength="8"** />
+                        <label for="password">Contraseña (Mín. 8):</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="telefono" type="number" placeholder="Solo números" **pattern="[0-9]{8,15}"** />
+                        <label for="telefono">Número de teléfono:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="cantidad" type="number" placeholder="1" **required** **min="1"** **max="99"** />
+                        <label for="cantidad">Cantidad de Productos de Interés: *</label>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto: *</label>
+                        <select class="form-select" id="asunto" **required**>
+                            <option selected disabled value="">Selecciona una opción...</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="soporte">Soporte/Garantía</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" **required**></textarea>
+                        <label for="message">Mensaje: *</label>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-xl" id="submitButton" type="submit">
+                        <i class="fas fa-paper-plane me-2"></i> ENVIAR
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
